@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Sampah</title>
+    <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
+    <script src="https://webglfundamentals.org/webgl/resources/m4.js"></script>
+    <script type="text/javascript" src="parsing_obj.js"></script>
+    <script type="text/javascript" src="parsing_mtl.js"></script>
+    <script type="text/javascript" src="handler.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="info-container">
+            <div class="user-info">
+                <h4>Wildan Fauzy Maulana Hasyim</h4>
+                <h5>5025221044 - Grafika Komputer D</h5>
+            </div>
+            <div class="control-box">
+                <p><strong>Fitur yang dapat digunakan:</strong></p>
+                <ul>
+                    <li>Seret untuk rotasi objek</li>
+                    <li>Gulir untuk memperbesar/memperkecil layar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            main();
+        });
+    </script>
+</body>
+</html>

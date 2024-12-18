@@ -1,0 +1,93 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+/* Canvas Container */
+.canvas-container {
+    flex: 1 1 60%; /* Reduced flex to make canvas smaller */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#canvas {
+    width: 100%;
+    height: 500px; /* Slightly reduced the height */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Info Container */
+.info-container {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centered the text */
+}
+
+.user-info h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px; /* Reduced font size */
+    font-weight: normal;
+}
+
+.user-info h5 {
+    margin-bottom: 10px;
+    color: #777;
+    font-size: 14px; /* Reduced font size */
+}
+
+.control-box p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: justify; /* Justified the paragraph text */
+}
+
+.control-box ul {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.control-box li {
+    color: #777;
+    font-size: 14px; /* Consistent font size for list items */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-container {
+        width: 100%;
+    }
+}
